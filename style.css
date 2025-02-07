@@ -7,14 +7,6 @@
     box-sizing: border-box;
 }
 
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     background: url('https://images.unsplash.com/photo-1631733156596-6c2342af3cbb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
@@ -27,38 +19,14 @@ body {
     padding: 20px;
 }
 
-.about {
+.container, .section {
+    width: 100%;
+    max-width: 1200px;
     background: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    max-width: 1200px;
-    border-radius: 10px;
-    display: flex; 
-    align-items: center;
-    gap: 15px;
-    padding: 40px;
-}
-
-.about p {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 1.6;
-}
-
-.photo {
-    width: 30%;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.container, section {
-    width: 100%;
-    max-width: 1200px;
-    background: rgba(0, 0, 0, 0.8); 
     padding: 20px;
     margin: 10px 0;
     border-radius: 10px;
+    text-align: center;
 }
 
 .intro-text {
@@ -79,22 +47,36 @@ body {
     letter-spacing: 1px;
 }
 
-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.about {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 40px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.about p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.photo {
+    width: 30%;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.projects h2, .section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffcc00;
 }
 
 ul {
     list-style-type: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
+    padding: 0 30px 20px;
 }
 
 ul li {
@@ -117,16 +99,7 @@ a:hover {
 .projects {
     text-align: center;
     padding: 50px;
-    background: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.projects h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #ffcc00;
 }
 
 .cards-container {
@@ -160,4 +133,3 @@ a:hover {
     font-size: 16px;
     color: white;
 }
-
