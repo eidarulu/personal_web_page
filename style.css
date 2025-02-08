@@ -88,6 +88,8 @@ img {
     max-width: 200px;
     max-height: 250px;
     border-radius: 5px;
+    object-position: 0% 37%;
+    border: 4px solid #951;
 }
 
 ul {
